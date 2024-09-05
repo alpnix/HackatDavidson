@@ -1,9 +1,9 @@
-import {AnimatePresence, motion} from 'framer-motion/dist/framer-motion';
-import {useContext, useEffect} from 'react';
-import {CALENDER_VIEW} from '../../constants';
-import {calenderContext} from '../../Context/calender.context';
-import {Flexbox} from '../../elements/Flexbox';
-import {calenderMainLogic} from './calender.function';
+import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion';
+import { useContext, useEffect } from 'react';
+import { calenderContext } from '../../Context/calender.context';
+import { CALENDER_VIEW } from '../../constants';
+import { Flexbox } from '../../elements/Flexbox';
+import { calenderMainLogic } from './calender.function';
 import CalenderLayout from './calender.layout';
 
 import * as H from './style';
@@ -74,7 +74,7 @@ const EventsView = () => {
   );
 };
 
-export const Calender = ({data}: any) => {
+const Calender = ({data}: any) => {
   const contextTesting = useContext(calenderContext);
   const {state, dispatch} = contextTesting;
 
@@ -109,3 +109,5 @@ export const Calender = ({data}: any) => {
     </CalenderLayout>
   );
 };
+
+export default Calender;

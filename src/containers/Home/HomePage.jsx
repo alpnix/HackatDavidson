@@ -1,8 +1,15 @@
+import MyCalender from 'containers/calender';
 import {UseMedia} from 'hooks/useMedia';
 import {useState} from 'react';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import {
+  Prizeinfo,
+  TeamInfo,
+  frequentlyAskedQuestions,
+  sponsorLogos
+} from '../../Module/General';
 import {Logo, LogoSectionAbout} from '../../components/About/index.jsx';
 import {Accordion} from '../../components/Accordian/index.jsx';
 import Birds from '../../components/Animation';
@@ -12,22 +19,12 @@ import {FirstPrize, PrizeHeading} from '../../components/Prizes/index.jsx';
 import Media from '../../components/Socials/index.jsx';
 import {
   Sponsor,
-  SponsorsHead,
-  SponsorUS
+  SponsorUS,
+  SponsorsHead
 } from '../../components/Sponsors/sponsors.jsx';
-import {JoinTeam, Member} from '../../components/Team';
-import {
-  FOOTER,
-  frequentlyAskedQuestions,
-  JudgesInfo,
-  Prizeinfo,
-  sponsorLogos,
-  TeamInfo,
-  TOP_SECTION
-} from '../../Module/General';
-import MyCalender from '../calender';
+import {Member} from '../../components/Team';
 import './about.css';
-import pattern from './assets/pattern4.png';
+import logoDavidson from './assets/Hack@Davidson_logo_plain.png';
 
 const SponsorGroup = (props, index) => {
   return (
@@ -35,7 +32,7 @@ const SponsorGroup = (props, index) => {
       {props.map((s, i) => (
         <Col key={i} className="" sm={12} lg={4} md={6}>
           {' '}
-          <Sponsor srcx={s.src} />{' '}
+          <Sponsor srcx={s.src} linkx={s.link} />{' '}
         </Col>
       ))}
     </Row>
@@ -56,15 +53,27 @@ const PrizeGroup = (props, index) => {
 };
 
 // Prize group ending
+// const TeamMembers = (props, index) => {
+//   return (
+//     <Row key={index} className="members">
+//       {props.map((s, i) => (
+//         <Col key={i} className="" sm={9} lg={3} md={3}>
+//           <Member info={s} />
+//         </Col>
+//       ))}
+//     </Row>
+//   );
+// };
+
 const TeamMembers = (props, index) => {
   return (
-    <Row key={index} className="members">
+    <div key={index} className="horizontal-scroll-container">
       {props.map((s, i) => (
-        <Col key={i} className="" sm={12} lg={4} md={4}>
+        <div key={i}>
           <Member info={s} />
-        </Col>
+        </div>
       ))}
-    </Row>
+    </div>
   );
 };
 
@@ -85,7 +94,7 @@ export default function HomePage() {
   UseMedia('min-width', 1000, setMedia);
 
   return (
-    <div className="Whole_div" style={{backgroundImage: `url(${pattern})`}}>
+    <div className="Whole_div">
       <div className="color_sectiom" id="home">
         <Container fluid>
           <Row className="Row info">
@@ -94,6 +103,9 @@ export default function HomePage() {
             </Col>
             <Col className="d-image" sm={12} lg={5} md={5}>
               <MyCalender />
+            </Col>
+            <Col className="d-image" sm={12} lg={5} md={5}>
+              <img src={logoDavidson}></img>
             </Col>
           </Row>
 
@@ -123,15 +135,17 @@ export default function HomePage() {
 
         {/* ********Prizes here ***** */}
         <Row className="prizesection" id="prizes">
-          <PrizeHeading type="Prize section" />
+          <PrizeHeading type="Prizes" />
+          <a
+            href="https://hackdavidson.devpost.com/project-gallery"
+            style={{textDecoration: 'underline', cursor: 'pointer'}}
+          >
+            <PrizeHeading type="Check out our 2023 Winners!" />
+          </a>
+
           {Prizeinfo.map(PrizeGroup)}
         </Row>
         {/* ********Prizes ending here ***** */}
-
-        <Row className="prizesection non-coding">
-          <PrizeHeading type="Non-coding prizes" />
-          <h2>coming soon</h2>
-        </Row>
 
         {/* ********Sponsors here ***** */}
 
@@ -145,28 +159,9 @@ export default function HomePage() {
         {media && <Birds top="120vh" left="0vh" type="" />}
 
         {/* ********Team here ***** */}
-        <h1 id="team">Our Team</h1>
-        {FOOTER.JOIN_TEAM.required && (
-          <JoinTeam
-            placeholder="Join our team"
-            formLink={FOOTER.JOIN_TEAM}
-            content="Interested in joining our team"
-          />
-        )}
+        <h1 id="team">Team</h1>
         {TeamInfo.map(TeamMembers)}
-        {/* ********Team ending here ***** */}
 
-        {/* ********Judges here ***** */}
-
-        <h1 id="team">Judges</h1>
-        {FOOTER.JOIN_TEAM.required && (
-          <JoinTeam
-            placeholder="Join our team"
-            formLink={TOP_SECTION.JUDGES_FORM_LINK}
-            content="Interested in being judge"
-          />
-        )}
-        {JudgesInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
       </Container>
       <Footer />

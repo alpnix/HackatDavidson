@@ -3,26 +3,38 @@ import {Btn} from '../Landing/index.jsx';
 import './sponsors.scss';
 
 function SponsorsHead() {
-  return <h1 className="shead">Sponsors & Partners</h1>;
+  return <h1 className="shead">Special Thanks To Our Sponsors & Partners</h1>;
 }
 
 function Sponsor(props) {
   return (
-    <div className="Sponsor ">
-      <img src={props.srcx} alt="Limbo hacks"></img>
+    <div className="Sponsor">
+      <a href={props.linkx}>
+        <img
+          src={props.srcx}
+          alt="Hack@Davidson  "
+          // width={250}
+          // height={150}
+        ></img>
+      </a>
     </div>
   );
 }
 
 function SponsorUS() {
   return (
-    <div className="joinT sponsorUS">
-      <h3>Interested in Sponsoring </h3>
-      <a href={SOCIALS.email}>
-        <Btn className="sponsor_btn" type="Sponsor us" overlay="Send a mail" />
-      </a>{' '}
+    <div className="sponsorUS">
+      <div>
+        <h3>Interested in Donating?</h3>
+        <p>
+          I Want to Support... -{'>'} Other -{'>'} Hack@Davidson
+        </p>
+      </div>
+      <a href={SOCIALS.donate} target="_blank">
+        <Btn type="Donate" overlay="Davidson College Gift" />
+      </a>
     </div>
   );
 }
 
-export {SponsorsHead, Sponsor, SponsorUS};
+export {Sponsor, SponsorUS, SponsorsHead};

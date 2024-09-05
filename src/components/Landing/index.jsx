@@ -28,31 +28,38 @@ const Myinfo = () => {
     <div className="Myinfo">
       <About />
       <p> {TOP_SECTION.SHORT_DESCRIPTION}</p>
-      <div className="join_dis">
-        <a rel="noreferrer" target="_blank" href={SOCIALS.discord}>
+      <br></br>
+      <br></br>
+      <div className="buttom-group">
+        <a href={SOCIALS.SPONSOR_US_EMAIL} target="_blank">
+          {' '}
           <Btn
-            ico="fab fa-2x fa-discord"
+            class="register"
+            type="Sponsor us!"
+            overlay="See sponsor package"
+          />
+        </a>
+
+        <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK} target="_blank">
+          {' '}
+          <Btn type="Register" overlay="Hackers registration" />
+        </a>
+      </div>
+      {/* <div className="join_dis">
+        <a
+          style={{position: 'relative', left: '0%'}}
+          rel="noreferrer"
+          target="_blank"
+          href={SOCIALS.discord}
+        >
+          <Btn
+            ico="fab fa-discord"
             class="join_disco"
             type="Join our discord"
             overlay="Click the link"
           />
         </a>
-      </div>
-      <div className="buttom-group">
-        <a href={TOP_SECTION.JUDGES_FORM_LINK}>
-          {' '}
-          <Btn class="sponsor_btn" type="Judges" overlay="Fill the form" />
-        </a>
-
-        <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>
-          {' '}
-          <Btn
-            class="register"
-            type="Register "
-            overlay="Hackers registration"
-          />
-        </a>
-      </div>
+      </div> */}
     </div>
   );
 };

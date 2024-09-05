@@ -1,6 +1,8 @@
 .Sponsor{
   margin-bottom: 5rem;
   transition: 0.3s;
+  display: flex;
+  align-items: center; /* Vertically center the image within the row */
 }
 .Sponsor:hover{
   transform: scale(1.1);
@@ -14,22 +16,56 @@
 .shead{
     font-size: 6rem;
     margin-bottom: 6rem;
-   margin-top: -3rem;
+    margin-top: -3rem;
 }
 
 .sponsorUS {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; 
   margin-bottom: 7rem;
 }
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10rem; /* Adjust this value to control spacing between text and button */
+}
+
+.sponsorUS h3{
+  margin-right: 10rem;
+}
+
+.sponsorUs p{
+  font-size: 0.8em;
+  margin-right: 10rem;
+}
+
+.sponsorUS div {
+  margin: 0;
+}
+
 
 /* more smaller */
 @media  (max-width: 570px){
   .shead{
     margin-top:0;
+    font-size: 2rem;
   }
   .Sponsor img{
+  margin-bottom: 1rem;
+  }
+  .sponsorUS h3{
+    margin-right: 2rem;
+    font-size: 1em;
+  }
+  
+  .sponsorUs p{
+    font-size: 0.4em;
+    margin-right: 2rem;
+  }
 
-  margin-bottom: 3rem;
-}
 }
   .Sponsor img{
  
@@ -44,3 +80,4 @@
     0% { transform: translateY(0); }
     100% { transform: translateY(-20px); }
   }
+

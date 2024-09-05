@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
+import {calenderContext} from '../../Context/calender.context';
 import {CALENDER_VIEW} from '../../constants';
 import {months} from '../../constants/index';
-import {calenderContext} from '../../Context/calender.context';
 import {Flexbox} from '../../elements/Flexbox';
 import * as H from './style';
 
