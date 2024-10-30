@@ -5,22 +5,29 @@
  */
 
 import hackathon_logo from './Assets/(no BG) Hack@Davidson_LOGO_Robotic.png';
+import cloudflare from './Assets/sponsorsLogos/cloudflare.png';
 import davidson from './Assets/sponsorsLogos/davidson.jpg';
+import fidelity from './Assets/sponsorsLogos/fidelity.png';
 import forest from './Assets/sponsorsLogos/forest-systems.png';
+import godaddy from './Assets/sponsorsLogos/godaddy.png';
 import hurthub from './Assets/sponsorsLogos/hurthub.jpg';
+import kintone from './Assets/sponsorsLogos/kintone.png';
+import launchclt from './Assets/sponsorsLogos/launchclt.jpeg';
 import mlh from './Assets/sponsorsLogos/mlhlogo.png';
+import nord from './Assets/sponsorsLogos/nord.png';
 import p2 from './Assets/sponsorsLogos/p2.jpeg';
 import precisely from './Assets/sponsorsLogos/precisely.png';
-import standoutstickers from './Assets/sponsorsLogos/stand-out-stickers-logo.svg';
+import standoutstickers from './Assets/sponsorsLogos/stand-out-stickers-logo.png';
+import starknet from './Assets/sponsorsLogos/starknet.png';
 import stellar from './Assets/sponsorsLogos/stellar.jpeg';
 import summit from './Assets/sponsorsLogos/summit.png';
 import alice from './Assets/teami/Alice.jpg';
-import dmytro from './Assets/teami/Dmytro.jpg';
+import dmytro from './Assets/teami/Dmytro.png';
 import kate from './Assets/teami/Kate.jpg';
 import luke from './Assets/teami/Luke.jpg';
 import niya from './Assets/teami/Niya.jpg';
 import sky from './Assets/teami/Sky.jpg';
-import wendy from './Assets/teami/Wendy.jpg';
+import wendy from './Assets/teami/Wendy.png';
 import alp from './Assets/teami/alp.jpg';
 import lorraine from './Assets/teami/lorraine.jpg';
 import sunny from './Assets/teami/sunny.jpg';
@@ -33,20 +40,19 @@ import sunny from './Assets/teami/sunny.jpg';
 const TOP_SECTION = {
   TITLE: 'Hack@Davidson',
   Typed_effect: [
-    'Over 3,000 worth of prizes',
-    '48 hours of creation',
+    '$6,000 in prizes',
+    '36 hours of creation',
     'No coding needed'
   ],
   SHORT_DESCRIPTION:
-    'Join us between February 2nd-4th 2024 for 48 hours of creation, innovation, & fun!',
-  DISCORD_LINK: 'https://discord.gg/vhh4SrmJm9',
-  HACKERS_REGISTRATION_FORM_LINK:
-    'https://docs.google.com/forms/d/e/1FAIpQLSeiZrFXX8HXdHiJmbFfq30vrAYCNkGTZi_WznwryH0YF1EnNQ/viewform?usp=sf_link'
+    'Join us between January 31st - February 2nd 2025 for 36 hours of creation, innovation, & fun!',
+  DISCORD_LINK: 'https://discord.gg/DsxPGRqFuS',
+  HACKERS_REGISTRATION_FORM_LINK: 'https://forms.gle/VqRGbmrzgaz2eUdS7'
 };
 
 const SOCIALS = {
   instagram: 'https://www.instagram.com/hackatdavidson/',
-  discord: 'https://discord.gg/vhh4SrmJm9',
+  discord: 'https://discord.gg/jvaPqNssAa',
   linkedin: 'https://www.linkedin.com/company/hackatdavidson/',
   devpost: 'https://hackatdavidson.devpost.com/',
   email: 'mailto:hack@davidson.edu',
@@ -161,12 +167,12 @@ const Prizeinfo = [
       content: '3x Meta Oculus Quest 2'
     },
     {
-      icon: <i className="first fas fa-4x fa-trophy"></i>,
+      icon: <i className="second fas fa-4x fa-trophy"></i>,
       type: 'Best Accessibility Tool',
       content: '3x Apple Watch SE 2nd Gen'
     },
     {
-      icon: <i className=" second fas fa-4x fa-trophy"></i>,
+      icon: <i className="third fas fa-4x fa-trophy"></i>,
       type: 'Best Finance Hack',
       content: '3x AirPods 3rd Gen'
     }
@@ -174,38 +180,56 @@ const Prizeinfo = [
   [
     //Array 2
     {
-      icon: <i className=" third fas fa-4x fa-trophy"></i>,
+      icon: <i className="fourth fas fa-4x fa-trophy"></i>,
       type: 'Best First Time',
       content: '3x JBL Flip 6 Speaker'
     },
     {
-      icon: <i className="fab fourth fas fa-4x fa-trophy"></i>,
+      icon: <i className="fifth fas fa-4x fa-trophy"></i>,
       type: 'Best No-Code Hack',
       content: '3x Logitech MX Master 3S Wireless Mouse'
     },
     {
       icon: <i className="first fas fa-4x fa-trophy"></i>,
-      type: 'Top Workshop Engagement (3 individuals)',
-      content: '3x Apple AirTag '
+      type: 'Best Cybersecurity Hack (2)',
+      content: '6x 1 year subscriptions to NordVPN, NordPass and Incogni'
     }
   ],
   [
     //Array 3
     {
-      icon: <i className=" fifth fas fa-4x fa-trophy"></i>,
-      type: '4-6 MLH Categories',
-      content: 'Google Cloud Backpacks, Mechanical Keyboards, and more!'
+      icon: <i className="second fas fa-4x fa-trophy"></i>,
+      type: 'Best DEI Hack',
+      content: 'Fidelity Branded Wireless Charger'
+    },
+    {
+      icon: <i className="first fas fa-4x fa-trophy"></i>,
+      type: 'Best AI Application Built with Cloudflare',
+      content: 'Arduino Kit'
+    },
+    {
+      icon: <i className="eighth fas fa-4x fa-trophy"></i>,
+      type: 'Best Use of Kintone',
+      content: 'Breadboard IoT Kit'
     }
-    //   {
-    //     icon: <i className="fas fa-4x fa-trophy"></i>,
-    //     type: 'TBD',
-    //     content: ''
-    //   },
-    //   {
-    //     icon: <i className="fas fas fa-4x fa-trophy "></i>,
-    //     type: 'More prizes',
-    //     content: 'More prizes will be revealed later'
-    //   }
+  ],
+  [
+    {
+      icon: <i className="seventh solid fas fa-4x fa-trophy"></i>,
+      type: 'Best Domain Name from GoDaddy Registry',
+      content: 'Hack from Home Kit'
+    },
+    {
+      icon: <i className="fourth fas fa-4x fa-trophy"></i>,
+      type: 'Best Use of Starknet',
+      content: 'Starknet Care Package for Coders'
+    },
+
+    {
+      icon: <i className="fifth fas fa-4x fa-trophy"></i>,
+      type: 'Top Workshop Engagement (3 individuals)',
+      content: '3x Apple AirTag '
+    }
   ]
 ];
 
@@ -364,8 +388,8 @@ const sponsorLogos = [
       link: 'https://hurthub.davidson.edu/'
     },
     {
-      src: mlh,
-      link: 'https://mlh.io/'
+      src: launchclt,
+      link: 'https://launchclt.org/'
     }
   ], //Array 2
   [
@@ -374,11 +398,48 @@ const sponsorLogos = [
       link: 'https://www.summitcoffee.com/'
     },
     {
+      src: fidelity,
+      link: ''
+    },
+    {
+      src: starknet,
+      link: ''
+    }
+    // {src: quoin, link: 'https://quoininc.com/'},
+  ],
+  [
+    {
+      src: godaddy,
+      link: ''
+    },
+    {
+      src: kintone,
+      link: ''
+    },
+    {
       src: standoutstickers,
       link: 'http://hackp.ac/mlh-StandOutStickers-hackathons'
+    }
+  ],
+  [
+    {
+      src: mlh,
+      link: 'https://mlh.io/'
     },
-    {src: davidson, link: 'https://www.davidson.edu/'}
-    // {src: quoin, link: 'https://quoininc.com/'},
+    {
+      src: davidson,
+      link: 'https://www.davidson.edu/'
+    },
+    {
+      src: nord,
+      link: 'https://incogni.com/'
+    }
+  ],
+  [
+    {
+      src: cloudflare,
+      link: ''
+    }
   ]
 ];
 
@@ -427,7 +488,7 @@ const frequentlyAskedQuestions = [
       {
         label: 'How team formation works?',
         content:
-          "You can form team with 3 members in it at maximum. If you don't have a team, there'll be plenty of opportunities for you to meet hackers and form a team!"
+          "You can form team with 4 members in it at maximum. If you don't have a team, there'll be plenty of opportunities for you to meet hackers and form a team!"
       }
     ]
   ]

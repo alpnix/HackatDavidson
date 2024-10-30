@@ -1,11 +1,9 @@
-import MyCalender from 'containers/calender';
 import {UseMedia} from 'hooks/useMedia';
 import {useState} from 'react';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import {
-  Prizeinfo,
   TeamInfo,
   frequentlyAskedQuestions,
   sponsorLogos
@@ -101,9 +99,9 @@ export default function HomePage() {
             <Col className="info-div" sm={12} lg={7} md={7}>
               <Myinfo />
             </Col>
-            <Col className="d-image" sm={12} lg={5} md={5}>
+            {/* <Col className="d-image" sm={12} lg={5} md={5}>
               <MyCalender />
-            </Col>
+            </Col> */}
             <Col className="d-image" sm={12} lg={5} md={5}>
               <img src={logoDavidson}></img>
             </Col>
@@ -137,13 +135,14 @@ export default function HomePage() {
         <Row className="prizesection" id="prizes">
           <PrizeHeading type="Prizes" />
           <a
-            href="https://hackdavidson.devpost.com/project-gallery"
+            href="https://hackatdavidson.devpost.com/project-gallery"
             style={{textDecoration: 'underline', cursor: 'pointer'}}
           >
-            <PrizeHeading type="Check out our 2023 Winners!" />
+            <PrizeHeading type="Check out our 2024 Winners!" />
           </a>
 
-          {Prizeinfo.map(PrizeGroup)}
+          {/* {Prizeinfo.map(PrizeGroup)} */}
+          <h2>2025 Prizes Coming Soon...</h2>
         </Row>
         {/* ********Prizes ending here ***** */}
 

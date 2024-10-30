@@ -1,4 +1,4 @@
-import {SOCIALS, TOP_SECTION} from '../../Module/General';
+import {TOP_SECTION} from '../../Module/General';
 import MytypedComponent from '../Typed/index.js';
 import './style.css';
 
@@ -31,13 +31,9 @@ const Myinfo = () => {
       <br></br>
       <br></br>
       <div className="buttom-group">
-        <a href={SOCIALS.SPONSOR_US_EMAIL} target="_blank">
+        <a href={TOP_SECTION.DISCORD_LINK} target="_blank">
           {' '}
-          <Btn
-            class="register"
-            type="Sponsor us!"
-            overlay="See sponsor package"
-          />
+          <Btn class="register" type="Discord" overlay="Discord" />
         </a>
 
         <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK} target="_blank">
