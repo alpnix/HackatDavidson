@@ -410,7 +410,7 @@ const sponsorLogos = [
   [
     {
       src: godaddy,
-      link: ''
+      link: 'https://www.godaddy.com/'
     },
     {
       src: kintone,
