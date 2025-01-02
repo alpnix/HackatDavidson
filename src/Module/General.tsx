@@ -23,13 +23,9 @@ import stellar from './Assets/sponsorsLogos/stellar.jpeg';
 import summit from './Assets/sponsorsLogos/summit.png';
 import alice from './Assets/teami/Alice.jpg';
 import dmytro from './Assets/teami/Dmytro.png';
-import kate from './Assets/teami/Kate.jpg';
 import luke from './Assets/teami/Luke.jpg';
-import niya from './Assets/teami/Niya.jpg';
-import sky from './Assets/teami/Sky.jpg';
 import wendy from './Assets/teami/Wendy.png';
 import alp from './Assets/teami/alp.jpg';
-import lorraine from './Assets/teami/lorraine.jpg';
 import sunny from './Assets/teami/sunny.jpg';
 
 /** Put all your sponsors logo inside folder `sponsorLogos`
@@ -241,13 +237,12 @@ const Prizeinfo = [
 
 const TeamInfo = [
   [
-    //Array 1
     {
-      name: 'Niya',
+      name: 'Alp',
       role: 'President',
-      github: 'https://github.com/niya-ma-1/',
-      linkedin: 'https://www.linkedin.com/in/niya-ma/',
-      img: niya
+      github: 'https://github.com/alpnix',
+      linkedin: 'https://linkedin.com/in/alpniksarli/',
+      img: alp
     },
     {
       name: 'Sunny',
@@ -255,34 +250,6 @@ const TeamInfo = [
       github: '',
       linkedin: 'https://www.linkedin.com/in/sunny-baek-62bbb925b/',
       img: sunny
-    },
-    {
-      name: 'Sky',
-      role: 'Sponsorship Lead',
-      github: 'https://github.com/skyyylaw',
-      linkedin: 'https://linkedin.com/in/skyluo24',
-      img: sky
-    },
-    {
-      name: 'Lorraine',
-      role: 'Logistics Lead',
-      github: '',
-      linkedin: 'https://www.linkedin.com/in/lorraine-xu-87a755243/',
-      img: lorraine
-    },
-    {
-      name: 'Alp',
-      role: 'Web Designer',
-      github: 'https://github.com/alpnix',
-      linkedin: 'https://linkedin.com/in/alpniksarli/',
-      img: alp
-    },
-    {
-      name: 'Kate',
-      role: 'Graphic Designer',
-      github: 'https://github.com/katehynes',
-      linkedin: 'https://www.linkedin.com/in/kathleen-hynes/',
-      img: kate
     },
     {
       name: 'Olsen',
